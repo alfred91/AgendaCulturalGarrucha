@@ -28,7 +28,6 @@ class UserExperienceController extends Controller
         $events = Event::where('category_id', $categoryId)->get();
         $category = Category::find($categoryId);
 
-        // Filtra las experiencias que pertenecen a las empresas asociadas con esos eventos
         $experiences = Experience::whereIn('company_id', $events->pluck('user.company.id'))->get();
 
         return view('user.experiences-show', compact('experiences', 'category'));
