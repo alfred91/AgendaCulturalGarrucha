@@ -58,10 +58,10 @@
     <!-- Mobile menu, show/hide based on menu state. -->
     <div class="sm:hidden" x-show="open" @click.away="open = false">
         <div class="pt-2 pb-3 space-y-1">
-            <a href="{{ route('user.agenda') }}" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-gray-900 hover:bg-red-600">Inicio</a>
+            <a href="{{ route('user.index') }}" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-gray-900 hover:bg-red-600">Inicio</a>
             <a href="{{ route('user.agenda') }}" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-gray-900 hover:bg-red-600">Agenda</a>
-            <a href="{{ route('user.agenda') }}" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-gray-900 hover:bg-red-600">Explora</a>
-            <a href="{{ route('user.agenda') }}" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-gray-900 hover:bg-red-600">Experiencias</a>
+            <a href="{{ route('user.explore') }}" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-gray-900 hover:bg-red-600">Explora</a>
+            <a href="{{ route('user.experiences') }}" class="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-gray-900 hover:bg-red-600">Experiencias</a>
         </div>
     </div>
 </nav>
